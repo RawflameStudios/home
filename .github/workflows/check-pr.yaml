@@ -1,0 +1,46 @@
+name: HTML Lint and Validation
+
+on:
+  push:
+    paths:
+      - '**.html'
+  pull_request:
+    paths:
+      - '**.html'
+
+jobs:
+  lint-html:
+    name: Lint HTML Files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install htmlhint
+        run: npm install -g htmlhint
+
+      - name: Run HTML Linter
+        run: htmlhint "**/*.html"
+
+  validate-html:
+    name: Validate HTML Files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install html5validator
+        run: pip install html5validator
+
+      - name: Validate HTML Files
+        run: html5validator --root . --also-check-css
