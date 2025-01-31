@@ -5,8 +5,7 @@ body {
     background-color: #333;
     color: #444;
     text-color: #556677;
-    background-image: url('img/RawflameNightLabel.png');
-    background-repeat:round;
+    background-image: url('img/RawflameBackground.png');
 }
 
 div {
