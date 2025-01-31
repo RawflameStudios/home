@@ -8,7 +8,7 @@ body {
     background-size: contain;
 }
 
-div {
+.div {
   background-color: #334;
   opacity: 0.95;
 }
