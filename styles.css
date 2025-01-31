@@ -5,10 +5,10 @@ body {
     background-color: #333;
     color: #444;
     background-image: url('img/RawflameBackground.png');
-    background-size: contain;
+    background-size: cover;
 }
 
-div {
+.div {
   background-color: #334;
   opacity: 0.95;
 }
@@ -91,4 +91,8 @@ a:visited {
   color:white;
   text-decoration:none;
   text-decoration-line:none;
+}
+
+.circle-image {
+  border-radius: 50%;
 }
