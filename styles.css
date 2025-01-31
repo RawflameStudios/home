@@ -92,3 +92,7 @@ a:visited {
   text-decoration:none;
   text-decoration-line:none;
 }
+
+.circle-image {
+  border-radius: 50%;
+}
