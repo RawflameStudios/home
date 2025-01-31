@@ -86,3 +86,9 @@ a:link {
 a:visited {
   color:cadetblue;
 }
+
+.header-title {
+  color:white;
+  text-decoration:none;
+  text-decoration-line:none;
+}
