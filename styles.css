@@ -6,6 +6,7 @@ body {
     color: #444;
     text-color: #556677;
     background-image: url('img/RawflameBackground.png');
+    background-size: cover;
 }
 
 div {
