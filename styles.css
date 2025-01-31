@@ -2,8 +2,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #333;
+    color: #444;
+    text-color: #556677;
+    background-image: url('img/RawflameNightLabel.png');
+    background-repeat:round;
+}
+
+div {
+  background-color: #334;
+  opacity: 0.95;
 }
 
 header {
@@ -34,17 +42,27 @@ section {
     background: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #334;
+    opacity: 0.95;
 }
 
 h2 {
-    color: #222;
+    color: coral;
+}
+
+h3 {
+  color: coral;
+}
+
+p {
+  color: salmon;
 }
 
 .project {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #345;
     margin: 10px 0;
-    background: #fff;
+    background: #334;
     border-radius: 5px;
 }
 
@@ -54,4 +72,12 @@ footer {
     background: #222;
     color: white;
     position: relative;
+}
+
+.round-image {
+  border-radius: 15%;
+}
+
+a:link {
+  color: lightslategray;
 }
