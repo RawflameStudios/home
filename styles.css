@@ -71,7 +71,9 @@ footer {
     padding: 10px;
     background: #222;
     color: white;
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .round-image {
